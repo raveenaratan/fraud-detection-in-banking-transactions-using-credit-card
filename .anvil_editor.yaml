@@ -1,8 +1,10 @@
 unique_ids:
   forms:
     Form1: V7UOIDW7J64RZBIZK7N6DRFJ4KNOD5C4
-  modules: {}
-  server_modules: {}
+  modules:
+    Home: '1702483430907345463958219.1579'
+  server_modules:
+    ServerModule1: '1702483397188827228160469.9186'
   assets:
     images (7).jpg: '1702478661008814986043393.8181'
     standard-page.html: FVMC2BJO3GZPTY5GVQXBAMNDUIZOHC4R
