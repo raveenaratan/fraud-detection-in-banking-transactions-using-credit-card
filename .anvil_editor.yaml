@@ -4,5 +4,6 @@ unique_ids:
   modules: {}
   server_modules: {}
   assets:
-    theme.css: UMAKTCSDK22MGZKFR2NAAZZGR5TZNMHL
+    images (7).jpg: '1702478661008814986043393.8181'
     standard-page.html: FVMC2BJO3GZPTY5GVQXBAMNDUIZOHC4R
+    theme.css: UMAKTCSDK22MGZKFR2NAAZZGR5TZNMHL

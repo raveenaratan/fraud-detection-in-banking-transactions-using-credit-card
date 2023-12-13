@@ -1,9 +1,19 @@
 allow_embedding: false
-package_name: Rally_App_1
-name: Rally App 1
+package_name: Fraud_Detection_in_Banking_Transactions_Using_Credit_Card
+name: Fraud Detection in Banking Transactions Using Credit Card
 startup_form: Form1
 native_deps: {head_html: '<link href="https://fonts.googleapis.com/css2?family=Eczar:wght@400;600&family=Roboto+Condensed:wght@300;400;700&display=swap"
     rel="stylesheet" rel="preload" as="font" crossorigin="anonymous">'}
 runtime_options: {version: 2, client_version: '3', server_version: python3-sandbox,
   server_spec: null}
-services: []
+metadata: {title: Fraud Detection in Banking Transactions Using Credit Card, description: 'The
+    use of credit cards for online transactions has become increasingly popular, but
+    it has also led to a rise in fraudulent activities. To combat this issue, financial
+    institutions are turning to advanced technologies such as Artificial Neural Networks
+    (ANNs) to detect and prevent fraudulent transactions. ANNs are a type of machine
+    learning algorithm that can learn and adapt to patterns in data, making them well-suited
+    for detecting fraudulent transactions.', logo_img: 'asset:images (7).jpg'}
+services:
+- source: /runtime/services/tables.yml
+  client_config: {}
+  server_config: {}
