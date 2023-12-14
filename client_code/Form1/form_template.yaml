@@ -62,10 +62,7 @@ components:
       type: TextArea
       layout_properties: {grid_position: 'EARSZD,RGYTDX UCCKWI,TFCFCJ'}
     - name: repswd_box
-      properties: {spacing_above: small, height: 36, visible: true, text: 'Enter your
-          password again
-
-          '}
+      properties: {spacing_above: small, height: 36, visible: true, text: PasswordAgain}
       type: TextArea
       layout_properties: {grid_position: 'EARSZD,RGYTDX ZPTIZH,XDQIXI'}
     - name: link_1
