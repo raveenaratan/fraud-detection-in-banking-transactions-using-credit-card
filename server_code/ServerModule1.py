@@ -4,12 +4,12 @@ from anvil.tables import app_tables
 import anvil.server
 
 @anvil.server.callable
-def add_Signup(Name, E-mail, Phone):
-  app_tables.feedback.add_row(
-    name=name, 
-    email=email, 
-    feedback=feedback, 
-    created=datetime.now()
+def add_Signup(Name, Email, Phone):
+  app_tables.signup.add_row(
+    Name=Name, 
+    Email=Email, 
+    Phone=Phone, 
+    Date_and_time=datetime.now()
   )
 
 # This is a server module. It runs on the Anvil server,

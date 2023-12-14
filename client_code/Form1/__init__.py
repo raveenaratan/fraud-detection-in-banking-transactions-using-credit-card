@@ -58,14 +58,14 @@ class Form1(Form1Template):
     Phone = self.phone_box.text
     # Call your 'add_feedback' server function
     # pass in name, email and phone as arguments
-    anvil.server.call('add_feedback', Name, Email, Phone)
+    anvil.server.call('add_Signup', Name, Email, Phone)
 
 
   def button_1_click(self, **event_args):
     Name = self.name_box.text
     Email = self.email_box.text
     Phone = self.phone_box.text
-    anvil.server.call('add_feedback', Name, Email, Phone)
+    anvil.server.call('add_Signup', Name, Email, Phone)
     # Show a popup that says 'Feedback submitted!'
     Notification("Signed In!").show()
 
@@ -73,13 +73,13 @@ class Form1(Form1Template):
     # Clear our three text boxes
     self.name_box.text = ""
     self.email_box.text = ""
-    self.phone_box_box.text = ""
+    self.phone_box.text = ""
 
   def button_1_click(self, **event_args):
     Name = self.name_box.text
     Email = self.email_box.text
     Phone = self.phone_box.text
-    anvil.server.call('add_feedback', Name, Email, Phone)
-    Notification("Feedback submitted!").show()
+    anvil.server.call('add_Signup', Name, Email, Phone)
+    Notification("submitted!").show()
     # Call your 'clear_inputs' method to clear the boxes
     self.clear_inputs()
