@@ -9,8 +9,22 @@ def add_Signup(Name, Email, Phone):
     Name=Name, 
     Email=Email, 
     Phone=Phone, 
-    Date_and_time=Date_and_Timetime.now()
+    # Date_and_Time=Date_and_Time.now()
   )
+
+# @anvil.server.callable
+# def add_feedback(name, email, feedback):
+#   app_tables.signup.add_row(
+#     Name=Name, 
+#     Email=Email, 
+#     Phone=Phone, 
+#     Date_and_Time=Date_and_Time.now()
+#   )
+  # Send yourself an email each time feedback is submitted
+  anvil.email.send(#to="noreply@anvil.works", # Change this to your email address!
+                   subject=f"Sign up from {Name}",
+                   text=f""" A new person has Signed up! Name: {Name} Email address: {Email} Phone: {Phone} """)
+
 
 # This is a server module. It runs on the Anvil server,
 # rather than in the user's browser.

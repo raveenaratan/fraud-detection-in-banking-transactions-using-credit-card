@@ -25,8 +25,8 @@ db_schema:
     - name: Name
       admin_ui: {width: 200, order: 1}
       type: string
-    - name: E-mail
-      admin_ui: {width: 200, order: 2}
+    - name: Email
+      admin_ui: {order: 2, width: 200}
       type: string
     - name: Phone
       admin_ui: {width: 200, order: 3}
