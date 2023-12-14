@@ -22,13 +22,19 @@ db_schema:
     client: none
     server: full
     columns:
-    - name: Date time
-      admin_ui: {width: 200, order: 0}
-      type: datetime
     - name: Name
       admin_ui: {width: 200, order: 1}
       type: string
     - name: E-mail
       admin_ui: {width: 200, order: 2}
       type: string
+    - name: Phone
+      admin_ui: {width: 200, order: 3}
+      type: number
+    - name: Password
+      admin_ui: {width: 200, order: 4}
+      type: string
+    - name: Date and Time
+      admin_ui: {width: 200, order: 5}
+      type: datetime
     title: Sign up

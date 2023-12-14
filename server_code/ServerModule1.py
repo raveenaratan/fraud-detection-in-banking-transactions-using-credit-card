@@ -3,7 +3,14 @@ import anvil.tables.query as q
 from anvil.tables import app_tables
 import anvil.server
 
-
+@anvil.server.callable
+def add_Signup(Name, E-mail, Phone):
+  app_tables.feedback.add_row(
+    name=name, 
+    email=email, 
+    feedback=feedback, 
+    created=datetime.now()
+  )
 
 # This is a server module. It runs on the Anvil server,
 # rather than in the user's browser.
