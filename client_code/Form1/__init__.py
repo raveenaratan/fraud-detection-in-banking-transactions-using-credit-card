@@ -29,13 +29,15 @@ class Form1(Form1Template):
     """This method is called when the button is clicked"""
     pass
 
+  def form_show(self, **event_args):
+    """This method is called when the form is shown on the page"""
+    pass
+
   def button_1_click(self, **event_args):
     # Display a popup that says 'You clicked the button'
     alert("You clicked the button")
 
-  def form_show(self, **event_args):
-    """This method is called when the form is shown on the page"""
-    pass
+
 
   def button_1_click(self, **event_args):
     # Set 'Name' to the text in the 'name_box'
@@ -62,7 +64,22 @@ class Form1(Form1Template):
   def button_1_click(self, **event_args):
     Name = self.name_box.text
     Email = self.email_box.text
-    Phone = self.phone_box_box.text
+    Phone = self.phone_box.text
     anvil.server.call('add_feedback', Name, Email, Phone)
     # Show a popup that says 'Feedback submitted!'
     Notification("Signed In!").show()
+
+  def clear_inputs(self):
+    # Clear our three text boxes
+    self.name_box.text = ""
+    self.email_box.text = ""
+    self.phone_box_box.text = ""
+
+  def button_1_click(self, **event_args):
+    Name = self.name_box.text
+    Email = self.email_box.text
+    Phone = self.phone_box.text
+    anvil.server.call('add_feedback', Name, Email, Phone)
+    Notification("Feedback submitted!").show()
+    # Call your 'clear_inputs' method to clear the boxes
+    self.clear_inputs()
