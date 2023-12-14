@@ -1,9 +1,10 @@
-allow_embedding: false
+services:
+- source: /runtime/services/tables.yml
+  client_config: {}
+  server_config: {}
 package_name: Fraud_Detection_in_Banking_Transactions_Using_Credit_Card
+allow_embedding: false
 name: Fraud Detection in Banking Transactions Using Credit Card
-startup_form: Form1
-native_deps: {head_html: '<link href="https://fonts.googleapis.com/css2?family=Eczar:wght@400;600&family=Roboto+Condensed:wght@300;400;700&display=swap"
-    rel="stylesheet" rel="preload" as="font" crossorigin="anonymous">'}
 runtime_options: {version: 2, client_version: '3', server_version: python3-sandbox,
   server_spec: null}
 metadata: {title: Fraud Detection in Banking Transactions Using Credit Card, description: 'The
@@ -13,7 +14,21 @@ metadata: {title: Fraud Detection in Banking Transactions Using Credit Card, des
     (ANNs) to detect and prevent fraudulent transactions. ANNs are a type of machine
     learning algorithm that can learn and adapt to patterns in data, making them well-suited
     for detecting fraudulent transactions.', logo_img: 'asset:images (7).jpg'}
-services:
-- source: /runtime/services/tables.yml
-  client_config: {}
-  server_config: {}
+startup_form: Form1
+native_deps: {head_html: '<link href="https://fonts.googleapis.com/css2?family=Eczar:wght@400;600&family=Roboto+Condensed:wght@300;400;700&display=swap"
+    rel="stylesheet" rel="preload" as="font" crossorigin="anonymous">'}
+db_schema:
+  sign_up:
+    client: none
+    server: full
+    columns:
+    - name: Date time
+      admin_ui: {width: 200, order: 0}
+      type: datetime
+    - name: Name
+      admin_ui: {width: 200, order: 1}
+      type: string
+    - name: E-mail
+      admin_ui: {width: 200, order: 2}
+      type: string
+    title: Sign up
