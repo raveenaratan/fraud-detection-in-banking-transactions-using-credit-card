@@ -9,7 +9,7 @@ def add_Signup(Name, Email, Phone):
     Name=Name, 
     Email=Email, 
     Phone=Phone, 
-    Date_and_time=datetime.now()
+    Date_and_time=Date_and_Timetime.now()
   )
 
 # This is a server module. It runs on the Anvil server,
