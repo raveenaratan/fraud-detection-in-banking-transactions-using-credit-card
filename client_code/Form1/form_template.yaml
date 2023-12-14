@@ -32,13 +32,11 @@ components:
       properties: {text: 'E-mail : '}
       type: Label
       layout_properties: {grid_position: 'CZFJGW,LKNAPA RZPHQI,BIPOKR'}
-    - name: text
-      properties: {spacing_above: small, height: 36, text: 'Enter your name
-
-          '}
+    - name: name_box
+      properties: {spacing_above: small, height: 36, text: Enter your name}
       type: TextArea
       layout_properties: {grid_position: 'CZFJGW,FLGHDD VUMTMM,VHSOVL'}
-    - name: text2
+    - name: email_box
       properties: {spacing_above: small, height: 36, text: E-mail}
       type: TextArea
       layout_properties: {grid_position: 'CZFJGW,FLGHDD HUUXBY,DHEBIH'}
@@ -54,17 +52,20 @@ components:
       properties: {text: 'Enter you password again : '}
       type: Label
       layout_properties: {grid_position: 'EARSZD,LJXYQS YYAHLQ,QNEIOI'}
-    - name: Phone
-      properties: {spacing_above: small, height: 36, text: "Phone \n"}
+    - name: phone_box
+      properties: {spacing_above: small, height: 36, text: 'Phone '}
       type: TextArea
       layout_properties: {grid_position: 'EARSZD,RGYTDX RBJAEA,JPHKRZ'}
-    - name: Password
+    - name: password_box
       properties: {spacing_above: small, height: 36, visible: true, text: "Password\
-          \ \n"}
+          \ \n\n"}
       type: TextArea
       layout_properties: {grid_position: 'EARSZD,RGYTDX UCCKWI,TFCFCJ'}
-    - name: text5
-      properties: {spacing_above: small, height: 36, visible: true, text: Enter your password again}
+    - name: repswd_box
+      properties: {spacing_above: small, height: 36, visible: true, text: 'Enter your
+          password again
+
+          '}
       type: TextArea
       layout_properties: {grid_position: 'EARSZD,RGYTDX ZPTIZH,XDQIXI'}
     - name: link_1
