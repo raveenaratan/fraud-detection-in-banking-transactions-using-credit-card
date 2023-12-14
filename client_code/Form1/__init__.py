@@ -83,3 +83,5 @@ class Form1(Form1Template):
     Notification("submitted!").show()
     # Call your 'clear_inputs' method to clear the boxes
     self.clear_inputs()
+
+
