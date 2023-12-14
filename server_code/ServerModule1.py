@@ -4,7 +4,7 @@ from anvil.tables import app_tables
 import anvil.server
 
 @anvil.server.callable
-def add_Signup(Name, Email, Phone):
+def add_signup(Name, Email, Phone):
   app_tables.signup.add_row(
     Name=Name, 
     Email=Email, 

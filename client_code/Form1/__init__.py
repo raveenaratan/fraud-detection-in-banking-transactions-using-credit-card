@@ -79,7 +79,7 @@ class Form1(Form1Template):
     Name = self.name_box.text
     Email = self.email_box.text
     Phone = self.phone_box.text
-    anvil.server.call('add_Signup', Name, Email, Phone)
+    anvil.server.call('add_signup', Name, Email, Phone)
     Notification("submitted!").show()
     # Call your 'clear_inputs' method to clear the boxes
     self.clear_inputs()
