@@ -37,10 +37,32 @@ class Form1(Form1Template):
     """This method is called when the form is shown on the page"""
     pass
 
-    def button_1_click(self, **event_args):
-    # Set 'name' to the text in the 'name_box'
+  def button_1_click(self, **event_args):
+    # Set 'Name' to the text in the 'name_box'
     Name = self.name_box.text
-    # Set 'email' to the text in the 'email_box'
-    E-mail = self.email_box.text
-    # Set 'feedback' to the text in the 'feedback_box'
-    Phone = self.Phone_box.text
+    # Set 'Email' to the text in the 'email_box'
+    Email = self.email_box.text
+    # Set 'Phone' to the text in the 'phone_box'
+    Phone = self.phone_box.text
+    # Set 'Password' to the text in the 'password_box'
+    Password = self.password_box.text
+    # Set 'Enter your Password' to the text in the 'repswd_box'
+    PasswordAgain = self.repswd_box.text
+
+
+  def  button_1_click(self, **event_args):
+    Name = self.name_box.text
+    Email = self.email_box.text
+    Phone = self.phone_box.text
+    # Call your 'add_feedback' server function
+    # pass in name, email and phone as arguments
+    anvil.server.call('add_feedback', Name, Email, Phone)
+
+
+  def button_1_click(self, **event_args):
+    Name = self.name_box.text
+    Email = self.email_box.text
+    Phone = self.phone_box_box.text
+    anvil.server.call('add_feedback', Name, Email, Phone)
+    # Show a popup that says 'Feedback submitted!'
+    Notification("Signed In!").show()
