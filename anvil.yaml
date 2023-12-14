@@ -18,7 +18,7 @@ startup_form: Form1
 native_deps: {head_html: '<link href="https://fonts.googleapis.com/css2?family=Eczar:wght@400;600&family=Roboto+Condensed:wght@300;400;700&display=swap"
     rel="stylesheet" rel="preload" as="font" crossorigin="anonymous">'}
 db_schema:
-  sign_up:
+  signup:
     client: none
     server: full
     columns:
@@ -34,4 +34,4 @@ db_schema:
     - name: Date and Time
       admin_ui: {width: 200, order: 5}
       type: datetime
-    title: Sign up
+    title: Signup
