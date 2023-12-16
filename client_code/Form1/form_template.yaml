@@ -33,11 +33,11 @@ components:
       type: Label
       layout_properties: {grid_position: 'CZFJGW,LKNAPA RZPHQI,BIPOKR'}
     - name: name_box
-      properties: {spacing_above: small, height: 36, text: Enter your name}
+      properties: {spacing_above: small, height: 36, text: '', placeholder: Enter your name}
       type: TextArea
       layout_properties: {grid_position: 'CZFJGW,FLGHDD VUMTMM,VHSOVL'}
     - name: email_box
-      properties: {spacing_above: small, height: 36, text: E-mail}
+      properties: {spacing_above: small, height: 36, text: '', placeholder: Email}
       type: TextArea
       layout_properties: {grid_position: 'CZFJGW,FLGHDD HUUXBY,DHEBIH'}
     - name: label_3_copy
@@ -53,16 +53,17 @@ components:
       type: Label
       layout_properties: {grid_position: 'EARSZD,LJXYQS YYAHLQ,QNEIOI'}
     - name: phone_box
-      properties: {spacing_above: small, height: 36, text: 'Phone '}
+      properties: {spacing_above: small, height: 36, text: '', placeholder: 'Phone '}
       type: TextArea
       layout_properties: {grid_position: 'EARSZD,RGYTDX RBJAEA,JPHKRZ'}
     - name: password_box
-      properties: {spacing_above: small, height: 36, visible: true, text: "Password\
-          \ \n\n"}
+      properties: {spacing_above: small, height: 36, visible: true, text: '
+
+          ', placeholder: 'Password '}
       type: TextArea
       layout_properties: {grid_position: 'EARSZD,RGYTDX UCCKWI,TFCFCJ'}
     - name: repswd_box
-      properties: {spacing_above: small, height: 36, visible: true, text: PasswordAgain}
+      properties: {spacing_above: small, height: 36, visible: true, text: '', placeholder: PasswordAgain}
       type: TextArea
       layout_properties: {grid_position: 'EARSZD,RGYTDX ZPTIZH,XDQIXI'}
     - name: link_1
